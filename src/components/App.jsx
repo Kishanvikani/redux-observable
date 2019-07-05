@@ -1,11 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import { petActions }  from '../actions';
-import {Header, Home, CreatePet, GetPet} from '../components';
+// import { petActions }  from '../actions';
+import {Header, Home, CreatePet, GetPet} from '../components'
 
-class App extends React.Component {
-
+class App extends React.Component{
     render() {
         return (
             <Router>
@@ -16,18 +15,16 @@ class App extends React.Component {
                     <Route exact path="/create" component={CreatePet}/>
                 </Switch>
             </Router>
-            
         );
     }
 }
 
+// const mapStateToProps = state => ({
+//     tool: state.workshop.tool,
+// });
 
-const mapStateToProps = state => ({
-    petList: state.petReducer.petList,
-});
+// const mapDispatchToProps = dispatch => (
+//     bindActionCreators({ switchTool }, dispatch)
+// );
 
-const mapDispatchToProps = dispatch => ({
-    fetchPets: (petId) => { dispatch(petActions.fetchPets(petId)) },
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(null, null)(App);
