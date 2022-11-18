@@ -12,7 +12,7 @@
     "react-pure-render": "^1.0.2",
     "react-redux": "^6.0.0",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^3.4.4",
     "redux": "^4.0.1",
     "redux-observable": "^1.1.0",
     "redux-thunk": "^2.3.0",
